@@ -24,7 +24,6 @@ function forEachObject(obj, func) {
 
 client.on('ready', () => {
   console.log(Logged in as ${client.user.tag}!);
-  console.log(`Logged in as  * [ "  Team #Plus Bot " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`); 
   client.user.setGame(a+help |By Ajinla3bo,"http://twitch.tv/Death Shop")
 
 });
