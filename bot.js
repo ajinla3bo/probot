@@ -23,7 +23,7 @@ function forEachObject(obj, func) {
 
 
 client.on('ready', () => {
-  console.log(Logged in as ${client.user.tag}!);
+  console.log(`Logged in as ${client.user.tag}!`);
   client.user.setGame(*help |By Ajinla3bo,"http://twitch.tv/Death Shop")
 });
 
