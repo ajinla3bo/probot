@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
-var prefix = "*";
+var prefix = "+";
 
 var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
@@ -24,7 +24,7 @@ function forEachObject(obj, func) {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
- client.user.setGame(*help |By ajinla3bo bot,"http://twitch.tv/DeathShop")
+ client.user.setGame(+help |By ajinla3bo bot,"http://twitch.tv/DeathShop")
 });
 
 
