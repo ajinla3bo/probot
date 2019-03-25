@@ -22,13 +22,10 @@ function forEachObject(obj, func) {
 /////////////////////////////////////////////////////////////////////////ALPHA / ALPHA CODES / ALPHA CODES///////////////////////////
 
 
-client.on('ready',  () => {
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~Team #Plus Bot~~~~~~~~~~~');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ "  Team #Plus Bot " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`); 
+client.on('ready', () => {
+  console.log(Logged in as ${client.user.tag}!);
+  console.log(`Logged in as  * [ "  Team #Plus Bot " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`); 
+  client.user.setGame(+help |By Ajinla3bo,"http://twitch.tv/Death Shop")
 
 });
 
@@ -2249,4 +2246,4 @@ if (message.content.startsWith(prefix + 'نقاطي')) {
 /////////////////////////////////////////////////////////////////////////ALPHA / ALPHA CODES / ALPHA CODES///////////////////////////
 
 
-client.login('NTU2NzkxMDA0OTQzMDg5Njc1.D3ja5w.EhtGDimFb58X9dfMPX3niWiMHDw');
+client.login(process.env.BOT_TOKEN);
